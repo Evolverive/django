@@ -1,0 +1,13 @@
+<h1>Counting Bro , youve got {{ count }} words</h1>
+
+<a href={% url 'home' %}> Start again</a>
+
+<h1>Full Text</h1>
+{{ full }}
+<h1>Word Count:</h1>
+{%  for word,counttot in worddict %}
+{{ word }}
+--
+{{ counttot }}
+    <br/>
+{%  endfor %}
